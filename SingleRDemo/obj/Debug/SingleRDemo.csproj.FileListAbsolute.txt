@@ -1,0 +1,17 @@
+D:\NewWork\OtherProjects\SingleRDemo\SingleRDemo\bin\SingleRDemo.dll
+D:\NewWork\OtherProjects\SingleRDemo\SingleRDemo\bin\SingleRDemo.pdb
+D:\NewWork\OtherProjects\SingleRDemo\SingleRDemo\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\NewWork\OtherProjects\SingleRDemo\SingleRDemo\bin\Microsoft.AspNet.SignalR.Owin.dll
+D:\NewWork\OtherProjects\SingleRDemo\SingleRDemo\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\NewWork\OtherProjects\SingleRDemo\SingleRDemo\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\NewWork\OtherProjects\SingleRDemo\SingleRDemo\bin\Microsoft.Web.Infrastructure.dll
+D:\NewWork\OtherProjects\SingleRDemo\SingleRDemo\bin\Newtonsoft.Json.dll
+D:\NewWork\OtherProjects\SingleRDemo\SingleRDemo\bin\Owin.dll
+D:\NewWork\OtherProjects\SingleRDemo\SingleRDemo\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\NewWork\OtherProjects\SingleRDemo\SingleRDemo\bin\Microsoft.AspNet.SignalR.Owin.xml
+D:\NewWork\OtherProjects\SingleRDemo\SingleRDemo\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\NewWork\OtherProjects\SingleRDemo\SingleRDemo\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\NewWork\OtherProjects\SingleRDemo\SingleRDemo\bin\Newtonsoft.Json.xml
+D:\NewWork\OtherProjects\SingleRDemo\SingleRDemo\obj\Debug\SingleRDemo.csprojResolveAssemblyReference.cache
+D:\NewWork\OtherProjects\SingleRDemo\SingleRDemo\obj\Debug\SingleRDemo.dll
+D:\NewWork\OtherProjects\SingleRDemo\SingleRDemo\obj\Debug\SingleRDemo.pdb
