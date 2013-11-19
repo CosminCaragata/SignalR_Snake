@@ -11,8 +11,8 @@ namespace SingleRDemo
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SnakeGame sg = new SnakeGame(20,20);
-            sg.AddPlayerToBoard();
+            SnakeGame sg = new SnakeGame(20, 20);
+            //sg.AddPlayerToBoard("");
             var planboard = sg.GetGameTable();
         }
     }

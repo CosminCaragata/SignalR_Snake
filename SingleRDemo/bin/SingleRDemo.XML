@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SingleRDemo</name>
+    </assembly>
+    <members>
+        <member name="T:SingleRDemo.CHub">
+            <summary>
+             The hub(server) where the SignalR clients connect.
+            </summary>
+        </member>
+        <member name="T:SingleRDemo.SnakeGame">
+            <summary>
+             The core of the game. Snake Game can be used only by using a type of this object   
+            </summary>
+        </member>
+        <member name="F:SingleRDemo.SnakeGame.SnakePlayers">
+            <summary>
+             List of players in the game at one point
+            </summary>
+        </member>
+        <member name="M:SingleRDemo.SnakeGame.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializes the game board 
+            </summary>
+            <param name="sizex">Game board size X</param>
+            <param name="sizey">Game board size Y</param>
+        </member>
+        <member name="M:SingleRDemo.SnakeGame.AddPlayerToBoard(System.String,System.String)">
+            <summary>
+            Method responsible to add a new player in the game and put it on the board.
+            </summary>
+        </member>
+        <member name="M:SingleRDemo.SnakeGame.GetGameTable">
+            <summary>
+            Returns the map of the game table
+            </summary>
+            <returns>Map of the table</returns>
+        </member>
+        <member name="M:SingleRDemo.SnakeGame.DoTurn">
+            <summary>
+            To be implemented
+            </summary>
+        </member>
+        <member name="M:SingleRDemo.SnakeGame.MoveSnakeBottom(SingleRDemo.SnakePlayer)">
+            <summary>
+            Moves a the snake in the specified direction
+            </summary>
+            <param name="snakePlayer">The snake player on the board that moves</param>
+        </member>
+        <member name="M:SingleRDemo.SnakeGame.MoveSnakeTop(SingleRDemo.SnakePlayer)">
+            <summary>
+            Moves a the snake in the specified direction
+            </summary>
+            <param name="snakePlayer">The snake player on the board that moves</param>
+        </member>
+        <member name="M:SingleRDemo.SnakeGame.MoveSnakeLeft(SingleRDemo.SnakePlayer)">
+            <summary>
+            Moves a the snake in the specified direction
+            </summary>
+            <param name="snakePlayer">The snake player on the board that moves</param>
+        </member>
+        <member name="M:SingleRDemo.SnakeGame.MoveSnakeRight(SingleRDemo.SnakePlayer)">
+            <summary>
+            Moves a the snake in the specified direction
+            </summary>
+            <param name="snakePlayer">The snake player on the board that moves</param>
+        </member>
+        <member name="M:SingleRDemo.SnakeGame.SnakeHeadsTowardsTail(SingleRDemo.SnakePlayer,SingleRDemo.SnakeDirection)">
+            <summary>
+            A method that checks if a snake heads backwards, to his tail
+            </summary>
+            <param name="snakePlayer">snakePlayer</param>
+            <param name="direction">direction</param>
+            <returns></returns>
+        </member>
+        <member name="M:SingleRDemo.SnakeGame.ContinueMoveSnake(SingleRDemo.SnakePlayer)">
+            <summary>
+            Continues movign snake to its assigned direction.
+            </summary>
+            <param name="snakePlayer"></param>
+        </member>
+        <member name="M:SingleRDemo.SnakeGame.ChangeDirection(SingleRDemo.SnakePlayer,SingleRDemo.SnakeDirection)">
+            <summary>
+             change direction of a snake is heading
+            </summary>
+            <param name="snakePlayer"></param>
+            <param name="newDirection"></param>
+        </member>
+        <member name="M:SingleRDemo.SnakeGame.SnakeCollidedWithSomething(SingleRDemo.SnakePlayer)">
+            <summary>
+            Returns true if the given snake player shares a position on the board with other snake player
+            </summary>
+            <param name="snakePlayer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SingleRDemo.SnakeGame.KillSnake(SingleRDemo.SnakePlayer)">
+            <summary>
+            Actualy kil la snake on the board ;)
+            </summary>
+            <param name="snakePlayer"></param>
+        </member>
+        <member name="M:SingleRDemo.SnakeGame.MoveSnakeToDirection(SingleRDemo.SnakePlayer,SingleRDemo.SnakeDirection)">
+            <summary>
+            Moves the snake to a specific direction
+            </summary>
+            <param name="snakePlayer"></param>
+            <param name="Direction"></param>
+        </member>
+        <member name="M:SingleRDemo.SnakeGame.TestDisplayPlayground">
+            <summary>
+            Display playground on console.Testing pourposes.
+            </summary>
+        </member>
+        <member name="P:SingleRDemo.SnakeGame.PlayGround">
+            <summary>
+            The actual table where the snakes "move"
+            </summary>
+        </member>
+        <member name="T:SingleRDemo.SnakeCell">
+            <summary>
+            Represents a cell on the gameboard.
+            If the _PlayerId value is 0 then the cell is empty, else it contains the Id of the player
+            </summary>
+        </member>
+        <member name="P:SingleRDemo.SnakeCell.PlayerId">
+            <summary>
+            The Id of the player in the cell, 0 if empty
+            </summary>
+        </member>
+        <member name="T:SingleRDemo.SnakePlayer">
+            <summary>
+            Contains the info about the player
+            </summary>
+        </member>
+        <member name="F:SingleRDemo.SnakePlayer.PlayerId">
+            <summary>
+            Player id
+            </summary>
+        </member>
+        <member name="F:SingleRDemo.SnakePlayer.PlayerConnectionId">
+            <summary>
+            Player's connection id to the client
+            </summary>
+        </member>
+        <member name="F:SingleRDemo.SnakePlayer.SnakeLength">
+            <summary>
+            Length of the snake of the player
+            </summary>
+        </member>
+        <member name="F:SingleRDemo.SnakePlayer.SnakeHeadLocation">
+            <summary>
+            Location of the head on the board
+            </summary>
+        </member>
+        <member name="F:SingleRDemo.SnakePlayer.Tail">
+            <summary>
+            All the position of the components of the snake except the head.
+            </summary>
+        </member>
+        <member name="F:SingleRDemo.SnakePlayer.Direction">
+            <summary>
+             The direction where the snake is headed. By default top.
+            </summary>
+        </member>
+        <member name="F:SingleRDemo.SnakePlayer.PlayerColor">
+            <summary>
+            The color of the player which is shown on the client.HTML format . "#" included.
+            </summary>
+        </member>
+        <member name="F:SingleRDemo.SnakePlayer.PlayerStatus">
+            <summary>
+            The status of the snake of the player.Starts  with Alive. If collied with something shoule be set to dead
+            </summary>
+        </member>
+        <member name="F:SingleRDemo.SnakePlayer.PlayerName">
+            <summary>
+            The name of the player.
+            </summary>
+        </member>
+        <member name="T:SingleRDemo.Position">
+            <summary>
+            A position on the gameboard defined by X and Y coordinates.
+            </summary>
+        </member>
+        <member name="F:SingleRDemo.Position.PosX">
+            <summary>
+            X position on the table
+            </summary>
+        </member>
+        <member name="F:SingleRDemo.Position.PosY">
+            <summary>
+            Y position on the table
+            </summary>
+        </member>
+        <member name="M:SingleRDemo.SnakeGameRunner.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Contructor of game
+            </summary>
+            <param name="sizex">Inits the size x of the table</param>
+            <param name="sizey">Inits the size Y of the table</param>
+        </member>
+        <member name="M:SingleRDemo.SnakeGameRunner.SendToUsersGameState">
+            <summary>
+             Method that handles how the gamestate is sent to the users
+            </summary>
+        </member>
+        <member name="M:SingleRDemo.SnakeGameRunner.RunGameCore">
+            <summary>
+            The while loop that runs the core of the game.Only one instance per server.
+            </summary>
+        </member>
+        <member name="M:SingleRDemo.SnakeGameRunner.StopGameCore">
+            <summary>
+            Method that stops the game core - stops the game.
+            </summary>
+        </member>
+        <member name="T:SingleRDemo.SnakeGameStatus">
+            <summary>
+            Represents the list of statuses in that the game can be
+            </summary>
+        </member>
+        <member name="T:SingleRDemo.SnakeDirection">
+            <summary>
+            a List a directions where the snake can head to
+            </summary>
+        </member>
+        <member name="F:SingleRDemo.T1.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+    </members>
+</doc>
